@@ -29,13 +29,13 @@ Added the mapDispatchToProps to the HOC connect as a seccond parameter.
 Include deleteProject to the arguments of ProjectList function.
 Added a button to call the deleteProject function passed as props. Because deleteProject expects an id added it to the onclick event of the button inside an arrow function and used project.id as the parameter.
 
-#### projectAction
+#### projectAction.js
 Created a similar function to createProject but changing the firestore command to delete, this function expects two parameters: the collection from where you want to delete and the id of the document to be deleted, dispatching the actions DELETE_PROJECT to the reducer.
 
-#### projectReducer
+#### projectReducer.js
 Added to new cases to the switch: DELETE_PROJECT and DELETE_PROJECT_ERROR both only return the state as it is.
 
-#### ProjectDetail
+#### ProjectDetails.js
 Similar to Dashboard.js:
 imported deleteProject from projectActions.js
 
